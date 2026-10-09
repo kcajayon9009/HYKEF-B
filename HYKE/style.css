@@ -1,0 +1,789 @@
+/* =========================================================
+   YOU KENN EAT HERE!
+   Main CSS
+   ========================================================= */
+
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #1c1c1c;
+    font-family: "Times New Roman", Georgia, serif;
+}
+
+
+/* =========================
+   PHONE
+   Figma phone size
+   ========================= */
+
+.phone {
+    position: relative;
+
+    width: 335px;
+    height: 724px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   MAIN LOGO
+   ========================= */
+
+.brand {
+    position: absolute;
+
+    top: 38px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 300px;
+
+    z-index: 10;
+}
+
+.brand-logo {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.login-body {
+    position: absolute;
+
+    top: 215px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 248px;
+
+    text-align: center;
+}
+
+.login-body h2 {
+    margin-bottom: 38px;
+
+    color: #17277f;
+
+    font-size: 42px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   FORM FIELDS
+   ========================= */
+
+.field {
+    position: relative;
+
+    margin-bottom: 31px;
+}
+
+.field input {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 42px 0 20px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #d9d9d9;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 20px;
+
+    color: #333;
+
+    outline: none;
+}
+
+.field input::placeholder {
+    color: #5d5d5d;
+}
+
+
+/* Input icons */
+
+.field .icon {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+
+    color: #555;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.icon {
+    cursor: pointer;
+}
+/* =========================
+   LOGIN BUTTON
+   ========================= */
+
+.btn-primary {
+    display: block;
+
+    width: 200px;
+    height: 24px;
+
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 4px;
+
+    background: #4144e8;
+
+    color: #ffffff;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   LOGIN SIGNUP LINK
+   ========================= */
+
+.login-footer {
+    position: absolute;
+
+    top: 540px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #222;
+
+    font-size: 19px;
+}
+
+.login-footer a {
+    color: #ed6500;
+
+    font-size: 23px;
+
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   HYKE FOOTER
+   ========================================================= */
+
+.hyke {
+    position: absolute;
+
+    bottom: 8px;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    z-index: 20;
+}
+
+.hyke-box {
+    position: relative;
+
+    width: 70px;
+
+    margin: 0 auto;
+}
+
+.hyke-box img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* Invisible clickable areas */
+
+.hyke .soc {
+    position: absolute;
+
+    top: 67%;
+
+    width: 13%;
+    height: 20%;
+
+    border-radius: 50%;
+}
+
+.hyke .soc-fb {
+    left: 25.4%;
+}
+
+.hyke .soc-ig {
+    left: 44.2%;
+}
+
+.hyke .soc-tw {
+    left: 62.9%;
+}
+
+
+/* =========================================================
+   SIGN UP
+   ========================================================= */
+
+.signup-head {
+    position: absolute;
+
+    top: 155px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.signup-head h2 {
+    color: #ed6500;
+
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.signup-head p {
+    margin-top: 6px;
+
+    color: #333;
+
+    font-size: 12px;
+}
+
+.signup-head p a {
+    margin-left: 4px;
+
+    color: #17277f;
+
+    font-size: 15px;
+
+    text-decoration: none;
+}
+
+.signup-head p a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SIGNUP FORM
+   ========================= */
+
+.signup-body {
+    position: absolute;
+
+    top: 232px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 225px;
+
+    text-align: center;
+}
+
+.signup-body .creating {
+    margin-bottom: 7px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+.signup-body .field {
+    margin-bottom: 10px;
+}
+
+.signup-body .field input {
+    width: 225px;
+    height: 27px;
+
+    padding: 0 16px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #d9d9d9;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 14px;
+}
+
+.signup-body .field .icon {
+    right: 9px;
+
+    font-size: 15px;
+}
+
+
+/* Signup button */
+
+.btn-signup {
+    display: block;
+
+    width: 165px;
+    height: 26px;
+
+    margin: 52px auto 0;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #ed6500;
+
+    color: #ffffff;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   GOOGLE / FACEBOOK
+   ========================= */
+
+.or {
+    margin: 36px 0 20px;
+
+    color: #222;
+
+    font-size: 18px;
+}
+
+.social-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 20px;
+
+    margin: 0 auto 8px;
+
+    border: 1px solid #999;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    background: #f3f3f3;
+}
+
+.social-btn .g {
+    margin-right: 8px;
+
+    color: #4285f4;
+
+    font-weight: bold;
+}
+
+.social-btn .f {
+    margin-right: 8px;
+
+    color: #1877f2;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   HOME
+   ========================================================= */
+
+.home {
+    position: relative;
+
+    width: 335px;
+    height: 724px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   FOOD CIRCLES
+   ========================= */
+
+.food {
+    position: absolute;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.food img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Top-left */
+
+.food1 {
+    top: -42px;
+    left: -48px;
+
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Top-right */
+
+.food2 {
+    top: 155px;
+    right: -58px;
+
+    width: 155px;
+    height: 155px;
+}
+
+
+/* Middle-left */
+
+.food3 {
+    top: 285px;
+    left: -52px;
+
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Middle-right */
+
+.food4 {
+    top: 425px;
+    right: -55px;
+
+    width: 155px;
+    height: 155px;
+}
+
+
+/* Bottom-left */
+
+.food5 {
+    bottom: -52px;
+    left: -50px;
+
+    width: 160px;
+    height: 160px;
+}
+
+
+/* =========================
+   HOME LOGO
+   ========================= */
+
+.home .brand {
+    top: 67px;
+
+    width: 290px;
+
+    z-index: 5;
+}
+
+
+/* =========================
+   HOME BUTTONS / CONTENT
+   ========================= */
+
+.home-content {
+    position: absolute;
+
+    top: 190px;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 5;
+
+    text-align: center;
+}
+
+
+/* Buttons */
+
+.chip {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 175px;
+    height: 25px;
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 10px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.chip:hover {
+    opacity: 0.85;
+}
+
+
+/* Orange */
+
+.chip-orange {
+    background: #dfa078;
+
+    color: #ffffff;
+}
+
+
+/* Green */
+
+.chip-green {
+    margin-top: 76px;
+
+    background: #79b33c;
+
+    color: #ffffff;
+}
+
+
+/* Violet */
+
+.chip-violet {
+    margin-top: 76px;
+
+    background: #d48ad9;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   HOME DESCRIPTION
+   ========================= */
+
+.home-note {
+    width: 225px;
+
+    margin: 7px auto 0;
+
+    font-size: 8px;
+
+    line-height: 11px;
+
+    font-weight: bold;
+}
+
+.note-orange {
+    color: #ed6500;
+}
+
+.note-green {
+    color: #65a72c;
+}
+
+.note-violet {
+    color: #d477d9;
+}
+
+
+/* =========================================================
+   OVERVIEW
+   ========================================================= */
+
+body:has(.overview-stage) {
+    background: #1c1c1c;
+
+    min-height: 100vh;
+
+    padding: 0;
+}
+
+
+/* Overview title */
+
+body:has(.overview-stage) > h1 {
+    margin: 68px 0 18px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 22px;
+
+    letter-spacing: 2px;
+}
+
+
+/* Three-panel GRID */
+
+.overview-stage {
+    display: grid;
+
+    grid-template-columns: repeat(3, 335px);
+
+    justify-content: center;
+
+    column-gap: 102px;
+
+    align-items: start;
+}
+
+
+/* Each panel */
+
+.overview-stage .panel {
+    width: 335px;
+}
+
+
+/* Labels */
+
+.overview-stage .label {
+    height: 22px;
+
+    color: #000000;
+
+    font-size: 15px;
+
+    line-height: 22px;
+}
+
+
+/* Phone iframe */
+
+.overview-stage iframe {
+    display: block;
+
+    width: 335px;
+    height: 724px;
+
+    border: none;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1150px) {
+
+    .overview-stage {
+        grid-template-columns: repeat(2, 335px);
+
+        row-gap: 25px;
+
+        column-gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .overview-stage {
+        grid-template-columns: 335px;
+
+        row-gap: 25px;
+    }
+
+}
+
+
+@media (max-width: 350px) {
+
+    .phone,
+    .home {
+        width: 100%;
+    }
+
+    .overview-stage iframe {
+        width: 100%;
+    }
+
+}
